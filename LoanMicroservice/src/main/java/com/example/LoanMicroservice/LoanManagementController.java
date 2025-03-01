@@ -10,12 +10,9 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping("/loan")
 public class LoanManagementController {
 
-    @Bean
-    public RestTemplate restTemplate(){
-        return new RestTemplate();
-    }
-//    @Autowired
-//    private RestTemplate restTemplate;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     @GetMapping("/apply")
     public String applyForLoan(){

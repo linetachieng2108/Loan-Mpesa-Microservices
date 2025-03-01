@@ -11,8 +11,8 @@ public class LoanMicroserviceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(LoanMicroserviceApplication.class, args);
 	}
-//	@Bean
-//	public RestTemplate restTemplate(){
-//		return new RestTemplate();
-//	}
+	@Bean
+	public RestTemplate restTemplate(){
+		return new RestTemplate();
+	}
 }
